@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+<h1 style=«color:gray»; align="center">{{h1}}</h1>
+
+<table border="1" cellpadding="5px" align="center">
+        <tr align="center">
+        <td>Юзернейм</td>
+        <td>Имя</td>
+        <td>Товар</td>
+        <td>Количество</td>
+        <td>Сумма заказа</td>
+    </tr>
+
+    {%for i in data%}
+    <tr>
+        <td>{{ i.username }}</td>
+        <td>{{ i.fullname }}</td>
+        <td>{{ i.goods }}</td>
+        <td>{{ i.quantity }}</td>
+        <td>{{ i.order_amount }}</td>
+    </tr>
+    <br>
+    {%endfor%}
+
+</table>
+
+
+</body>
+</html>
