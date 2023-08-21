@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView
 
-from first.models import CompletedOrder
+from user.models import CompletedOrder
 
 
 def index_page(request):

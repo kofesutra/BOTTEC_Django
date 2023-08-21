@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'first',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -65,7 +65,7 @@ WSGI_APPLICATION = 'BOTTEC_Django.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASE_ROUTERS = ['first.dbrouter.DbRouter']
+DATABASE_ROUTERS = ['user.dbrouter.DbRouter']
 DATABASE_APPS_MAPPING = {env.str('DB_NAME'): 'orders_psql'}
 
 DATABASES = {
