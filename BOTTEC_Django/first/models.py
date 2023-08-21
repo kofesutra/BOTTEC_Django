@@ -20,6 +20,3 @@ class CompletedOrder(models.Model):
 
     objects = models.Manager()
 
-    # def __init__(self):
-    #     # return f'Юзернейм: {self.username} Имя: {self.fullname} Cумма заказа: {self.order_amount}'
-    #     return self.username, self.fullname, self.order_amount
